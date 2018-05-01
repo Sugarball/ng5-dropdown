@@ -1,6 +1,6 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <DropdownComponent />
+  <app-dropdown [options]="optionList" [selected]="selectedList" (onUpdate)="onUpdate($event)"></app-dropdown>
 </div>
 
 

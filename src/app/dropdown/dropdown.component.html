@@ -1,3 +1,26 @@
-<p>
-  dropdown works!
-</p>
+<div ngbDropdown class="d-inline-block jcf-select" #currentDrop="ngbDropdown" (openChange)="dropdownClose($event)">
+  <div ngbDropdownToggle>
+    <span class="jcf-select-text"><span>{{getName()}}</span></span>
+    <span class="jcf-select-opener"><i class="fas fa-angle-down"></i></span>
+  </div>
+  
+  <div ngbDropdownMenu class="drop-container" (click)="$event.stopPropagation();">
+    <div class="drop-content">
+      <ul>
+        <li>
+          <label class="chekcbox">
+            <input type="checkbox" [(ngModel)]="allSelected" (click)="onSelectAll($event)">Select All
+          </label>
+        </li>
+        <li *ngFor="let option of ownOptions">
+          <label class="chekcbox">
+            <input type="checkbox" [(ngModel)]="option.selected">{{option.value}}
+          </label>
+        </li>
+      </ul>
+      <div class="drop-footer">
+        <button class="btn btn-primary js-close-dropdown" (click)="applyUpdate();currentDrop.close()">Apply</button>
+      </div>
+    </div>
+  </div>
+</div>

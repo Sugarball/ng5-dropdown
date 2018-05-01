@@ -1,0 +1,103 @@
+.jcf-select {
+  text-align: left;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  border: 1px solid #cfcfcf;
+  background: #f5f5f5;
+  border-radius: 3px;
+  margin: 0 0 12px;
+  width: 100%;
+  max-width: 300px;
+  height: 44px;
+  color: #696969;
+}
+.jcf-select .jcf-select-text {
+  margin-right: 58px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  cursor: default;
+  display: block;
+  font-size: 14px;
+  height: 44px;
+  line-height: 44px;
+  margin: 0 35px 0 12px;
+}
+.jcf-select .jcf-select-opener {
+  position: absolute;
+  text-align: center;
+  background: transparent;
+  width: 35px;
+  bottom: 1px;
+  right: 1px;
+  top: 1px;
+  background-color: #EFEFF1;
+  width: 46px;
+  border-left: 1px solid #cfcfcf;
+}
+.jcf-select .jcf-select-opener .fas {
+  font-size: 24px;
+  line-height: 42px;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.drop-container {
+  border-radius: 3px;
+  min-width: 340px;
+  border: 1px solid #CFCFCF;
+  position: absolute;
+  top: 100%;
+  left: -1px;
+  z-index: 1;
+  background-color: #F5F5F5;
+  padding: 0;
+  color: #696969;
+  margin-top: -1px;
+}
+.drop-container ul {
+  padding-top: 5px;
+  list-style: none;
+  list-style-image: none;
+  list-style-position: outside;
+  padding: 0;
+  margin: 0;
+}
+.drop-container ul li > label input {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin-top: 4px;
+}
+.drop-container ul li > label {
+  font-size: 14px;
+  font-weight: 300;
+  color: #696969;
+  display: block;
+  position: relative;
+  margin-bottom: 0px;
+  padding: 10px 0px 10px 35px;
+}
+
+.drop-footer {
+  border-top: 1px solid #CFCFCF;
+  background-color: #fff;
+  padding: 12px;
+  text-align: right;
+  margin: 4px 0 0;
+}
+.btn {
+  height: 36px;
+  padding: 7px 36px;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 3px;
+  font-weight: 300;
+}
+.btn-primary {
+  color: #fff;
+  background-color: #7F5EBA;
+  border-color: #714cb2;
+}
+
